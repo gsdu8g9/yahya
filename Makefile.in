@@ -70,7 +70,7 @@ VERSION = @VERSION@
 
 AUTOMAKE_OPTIONS = no-dependencies
 INCLUDES = -I$(srcdir)
-bin_PROGRAMS = corkscrew
+bin_PROGRAMS = yahya
 corkscrew_SOURCES = corkscrew.c
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
