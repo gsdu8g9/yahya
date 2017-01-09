@@ -29,22 +29,24 @@ it elsewhere.
 
 ## How Do I Build It?
 ------------------
-In the yahya directory type './configure' then 'make'.  Check
+Download zip file https://github.com/zeeshanali/yahya/archive/master.zip
+unzip it 
+In the yahya directory type '**./configure**' then '**make**'.  Check
 out the INSTALL file for more information.
 
 
 ## How Do I Install It?
 --------------------
-In the yahya directory type 'make install'.
+In the yahya directory type '**make install**'.
 
 
 ## How Is It Used?
 ---------------
 Setting up yahya with SSH/OpenSSH is very simple.  Adding
-the following line to your ~/.ssh/config file will usually do
+the following line to your **~/.ssh/config** file will usually do
 the trick (replace proxy.example.com and 8080 with correct values):
 
-ProxyCommand /usr/local/bin/yahya proxy.example.com 8080 %h %p
+**ProxyCommand /usr/local/bin/yahya proxy.example.com 8080 %h %p**
 
 NOTE: Command line syntax has changed since version 1.5.  Please
 notice that the proxy port is NOT optional anymore and is required
@@ -57,7 +59,7 @@ You will need to create a file that contains your usename and password
 in the form of :
 username:password
 
-I suggest you place this file in your ~/.ssh directory.
+I suggest you place this file in your **~/.ssh** directory.
 
 After creating this file you will need to ensure that the proper perms
 are set so nobody else can get your username and password by reading
@@ -67,7 +69,7 @@ chmod 600 myauth
 Now you will have to change the ProxyCommand line in your ~/.ssh/config
 file.  Here's an example :
 
-ProxyCommand /usr/local/bin/yahya proxy.work.com 80 %h %p ~/.ssh/myauth
+**ProxyCommand /usr/local/bin/yahya proxy.work.com 80 %h %p ~/.ssh/myauth**
 
 The proxy authentication feature is very new and has not been tested
 extensively so your mileage may vary.  If you encounter any problems
